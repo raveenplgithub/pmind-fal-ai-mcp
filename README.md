@@ -166,13 +166,11 @@ uv run pmind-fal-ai
 
 - Ensure your `FAL_API_KEY` is set correctly in `.env`
 - Verify the key at [https://fal.ai/dashboard/keys](https://fal.ai/dashboard/keys)
-- Check that the key has not expired
 
 ### Model Not Found
 
 - Use `list_models` to see available models
 - Check the exact model ID with `search_models`
-- Verify the model ID format: `owner/model` or `owner/model/version`
 
 ### Parameter Validation Errors
 
