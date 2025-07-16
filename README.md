@@ -89,7 +89,7 @@ Add the MCP server to your client's MCP configuration:
   "mcpServers": {
     "pmind-fal-ai": {
       "command": "uv",
-      "args": ["run", "--directory", "/path/to/pmind-fal-ai-mcp", "pmind-fal-ai"]
+      "args": ["--directory", "/path/to/pmind-fal-ai-mcp", "run", "pmind-fal-ai-mcp"]
     }
   }
 }
@@ -102,7 +102,7 @@ Replace `/path/to/pmind-fal-ai-mcp` with the actual path where you cloned the re
 Use the following command to add the server:
 
 ```bash
-claude mcp add pmind-fal-ai -- uv run --directory /path/to/pmind-fal-ai-mcp pmind-fal-ai
+claude mcp add pmind-fal-ai-mcp -- uv run --directory /path/to/pmind-fal-ai-mcp pmind-fal-ai-mcp
 ```
 
 ## Configuration Options
@@ -157,7 +157,7 @@ To test the server manually:
 
 ```bash
 # Run the MCP server
-uv run pmind-fal-ai
+uv run pmind-fal-ai-mcp
 ```
 
 ## Troubleshooting
