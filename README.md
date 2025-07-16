@@ -77,7 +77,7 @@ FAL_CACHE_DIR=~/.pmind-fal-ai/cache
 # FAL_DOWNLOAD_DIR=/path/to/downloads
 
 # Required: Upload state directory for async uploads
-UPLOAD_STATE_DIR=/tmp/fal-uploads
+FAL_UPLOAD_STATE_DIR=/tmp/fal-uploads
 ```
 
 ### Step 5: Configure with Your Client
@@ -87,7 +87,7 @@ Add the MCP server to your client's MCP configuration:
 ```json
 {
   "mcpServers": {
-    "pmind-fal-ai": {
+    "pmind-fal-ai-mcp": {
       "command": "uv",
       "args": ["--directory", "/path/to/pmind-fal-ai-mcp", "run", "pmind-fal-ai-mcp"]
     }
@@ -112,7 +112,7 @@ claude mcp add pmind-fal-ai-mcp -- uv run --directory /path/to/pmind-fal-ai-mcp 
 Required:
 - `FAL_API_KEY`: Your fal.ai API key for authentication
 - `FAL_CACHE_DIR`: Directory for caching model schemas
-- `UPLOAD_STATE_DIR`: Directory for upload state tracking
+- `FAL_UPLOAD_STATE_DIR`: Directory for upload state tracking
 
 Optional:
 - `FAL_DOWNLOAD_DIR`: Directory for downloaded files (defaults to current directory)
@@ -189,7 +189,7 @@ uv run pmind-fal-ai-mcp
 - View all uploads with `list_uploads` to find lost sessions
 - Clean up old uploads with `cleanup_old_uploads`
 - Ensure files are under 10MB (fal.ai limit)
-- Check `UPLOAD_STATE_DIR` for state files if debugging
+- Check `FAL_UPLOAD_STATE_DIR` for state files if debugging
 
 ## License
 

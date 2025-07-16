@@ -24,7 +24,7 @@ class UploadManager:
     
     def __init__(self, config: Config):
         self.config = config
-        self.state_dir = Path(config.upload_state_dir).expanduser()
+        self.state_dir = Path(config.fal_upload_state_dir).expanduser()
         self.state_dir.mkdir(parents=True, exist_ok=True)
     
     def start_upload(self, file_path: str, upload_type: str = "file") -> Dict[str, Any]:

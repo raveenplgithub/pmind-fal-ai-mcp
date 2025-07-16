@@ -12,7 +12,7 @@ class Config(BaseSettings):
     fal_api_key: str = Field(..., description="fal.ai API key for authentication")
     fal_cache_dir: str = Field(..., description="Directory for caching model schemas")
     fal_download_dir: str = Field(default=".", description="Default directory for file downloads")
-    upload_state_dir: str = Field(..., description="Directory for upload state tracking")
+    fal_upload_state_dir: str = Field(..., description="Directory for upload state tracking")
     
     # API endpoint
     api_url: str = Field(default="https://fal.ai/api", description="API URL for public endpoints")

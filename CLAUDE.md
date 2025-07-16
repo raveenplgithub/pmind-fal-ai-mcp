@@ -57,7 +57,7 @@ uv run pmind-fal-ai
 - `FAL_API_KEY` - Required: Your fal.ai API key
 - `FAL_CACHE_DIR` - Required: Directory for caching model schemas
 - `FAL_DOWNLOAD_DIR` - Optional: Directory for file downloads (defaults to current directory)
-- `UPLOAD_STATE_DIR` - Required: Directory for upload state tracking
+- `FAL_UPLOAD_STATE_DIR` - Required: Directory for upload state tracking
 
 ## Background Upload System
 
